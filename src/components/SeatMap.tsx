@@ -16,7 +16,6 @@ export default function SeatMap({ venue }: Props) {
   const heatmap = useUI((s) => s.heatmap);
   const [focusedId, setFocusedId] = useState<string | null>(null);
 
-  // ------ pan/zoom state ------
   const [scale, setScale] = useState(1);
   const [tx, setTx] = useState(0);
   const [ty, setTy] = useState(0);
@@ -27,7 +26,7 @@ export default function SeatMap({ venue }: Props) {
   const pinchStart = useRef<{
     dist: number;
     center: { x: number; y: number };
-    content: { x: number; y: number }; 
+    content: { x: number; y: number };
     scale: number;
   } | null>(null);
   const panStart = useRef<{ x: number; y: number; tx: number; ty: number } | null>(null);
@@ -88,9 +87,9 @@ export default function SeatMap({ venue }: Props) {
 
     let nextKey: string | null = null;
     if (e.key === "ArrowRight") nextKey = `${cur.sectionId}:${cur.row}:${cur.col + 1}`;
-    if (e.key === "ArrowLeft")  nextKey = `${cur.sectionId}:${cur.row}:${cur.col - 1}`;
-    if (e.key === "ArrowUp")    nextKey = `${cur.sectionId}:${cur.row - 1}:${cur.col}`;
-    if (e.key === "ArrowDown")  nextKey = `${cur.sectionId}:${cur.row + 1}:${cur.col}`;
+    if (e.key === "ArrowLeft") nextKey = `${cur.sectionId}:${cur.row}:${cur.col - 1}`;
+    if (e.key === "ArrowUp") nextKey = `${cur.sectionId}:${cur.row - 1}:${cur.col}`;
+    if (e.key === "ArrowDown") nextKey = `${cur.sectionId}:${cur.row + 1}:${cur.col}`;
     if (!nextKey) return;
 
     const nextId = seatIndex.grid.get(nextKey);
@@ -235,25 +234,25 @@ export default function SeatMap({ venue }: Props) {
                       seat.priceTier >= 4
                         ? "fill-tier-4"
                         : seat.priceTier === 3
-                        ? "fill-tier-3"
-                        : seat.priceTier === 2
-                        ? "fill-tier-2"
-                        : "fill-tier-1";
+                          ? "fill-tier-3"
+                          : seat.priceTier === 2
+                            ? "fill-tier-2"
+                            : "fill-tier-1";
 
                     const statusFill =
                       status === "available"
                         ? "fill-seat-available"
                         : status === "reserved"
-                        ? "fill-seat-reserved"
-                        : status === "sold"
-                        ? "fill-seat-sold"
-                        : "fill-seat-held";
+                          ? "fill-seat-reserved"
+                          : status === "sold"
+                            ? "fill-seat-sold"
+                            : "fill-seat-held";
 
                     const fillClass = isSelected
                       ? "fill-seat-selected"
                       : heatmap
-                      ? tierFill
-                      : statusFill;
+                        ? tierFill
+                        : statusFill;
 
                     return (
                       <g
@@ -291,17 +290,30 @@ export default function SeatMap({ venue }: Props) {
                   })
                 )}
 
-                {sec.rows.map((r) => (
-                  <text
-                    key={`row-${r.index}`}
-                    x={-24}
-                    y={((r.index - 1) * CELL * (sec.transform?.scale ?? 1))}
-                    className="fill-white/70 text-xs select-none pointer-events-none"
-                    dominantBaseline="central"
-                  >
-                    {String.fromCharCode(64 + r.index)}
-                  </text>
-                ))}
+                {sec.rows.map((r) => {
+                  const ss = sec.transform?.scale ?? 1;
+
+                  const ys = r.seats.map((s) => s.y).filter((v): v is number => typeof v === "number");
+                  const baseY = ys.length ? ys.reduce((a, b) => a + b, 0) / ys.length : (r.index - 1) * CELL;
+                  const rowY = baseY * ss;
+
+                  const xs = r.seats.map((s) => s.x).filter((v): v is number => typeof v === "number");
+                  const firstX = xs.length ? Math.min(...xs) : 0;
+                  const rowX = firstX * ss - (SEAT.w / 2 + 12);
+
+                  return (
+                    <text
+                      key={`row-${sec.id}-${r.index}`}
+                      x={rowX}
+                      y={rowY}
+                      textAnchor="end"
+                      dominantBaseline="central"
+                      className="fill-white/70 text-xs select-none pointer-events-none"
+                    >
+                      {String.fromCharCode(64 + r.index)}
+                    </text>
+                  );
+                })}
               </g>
             );
           })}
