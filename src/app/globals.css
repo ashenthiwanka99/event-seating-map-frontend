@@ -8,7 +8,13 @@
 
 @theme inline {
   --font-sans: var(--font-geist-sans, ui-sans-serif, system-ui, sans-serif);
-  --font-mono: var(--font-geist-mono, ui-monospace, SFMono-Regular, Menlo, monospace);
+  --font-mono: var(
+    --font-geist-mono,
+    ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    monospace
+  );
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -19,10 +25,15 @@
   --color-secondary-foreground: #ffffff;
 
   --color-seat-available: #16a34a;
-  --color-seat-reserved:  #f59e0b;
-  --color-seat-sold:      #ef4444;
-  --color-seat-held:      #6366f1;
-  --color-seat-selected:  #0ea5e9;
+  --color-seat-reserved: #f59e0b;
+  --color-seat-sold: #ef4444;
+  --color-seat-held: #6366f1;
+  --color-seat-selected: #0ea5e9;
+
+  --color-tier-1: #22c55e;
+  --color-tier-2: #eab308;
+  --color-tier-3: #f97316;
+  --color-tier-4: #ef4444;
 }
 
 @media (prefers-color-scheme: dark) {
