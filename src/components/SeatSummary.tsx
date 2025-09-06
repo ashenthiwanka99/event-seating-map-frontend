@@ -11,7 +11,7 @@ export default function SeatSummary({ venue }: Props) {
   const seatById = new Map(
     venue.sections.flatMap(sec =>
       sec.rows.flatMap(r =>
-        r.seats.map(s => [s.id, { s, secId: sec.id, row: r.index } as const ])
+        r.seats.map(s => [s.id, { s, secId: sec.id, row: r.index } as const])
       )
     )
   );
@@ -26,7 +26,11 @@ export default function SeatSummary({ venue }: Props) {
   return (
     <div className="space-y-4">
       <h2 className="text-lg font-semibold">Your Selection ({items.length}/8)</h2>
-      <div className="max-h-64 overflow-auto divide-y divide-gray-200 dark:divide-gray-800 rounded border border-gray-200 dark:border-gray-800">
+      <div
+        className="max-h-64 overflow-auto md:max-h-none md:overflow-visible
+             divide-y divide-gray-200 dark:divide-gray-800 rounded
+             border border-gray-200 dark:border-gray-800"
+      >
         {items.length === 0 && <div className="p-3 text-sm opacity-70">No seats selected</div>}
         {items.map(({ s, secId, row }) => (
           <div key={s.id} className="p-3 text-sm flex items-center justify-between">
