@@ -4,7 +4,8 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import SeatMap from "@/components/SeatMap";
 import SeatSummary from "@/components/SeatSummary";
-import { Venue, type TVenue } from "@/types/venue";
+import { TVenue, Venue } from "@/types/venue";
+
 
 async function getVenue(): Promise<TVenue> {
   const file = await fs.readFile(path.join(process.cwd(), "public", "venue.json"), "utf8");

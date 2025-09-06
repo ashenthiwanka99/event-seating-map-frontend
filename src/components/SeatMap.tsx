@@ -1,8 +1,9 @@
 "use client";
 import { useMemo, useRef, useState } from "react";
-import type { TVenue, TSeat } from "@/types/venue";
+
 import { useSelection } from "@/store/selection";
 import clsx from "clsx";
+import { TSeat, TVenue } from "@/types/venue";
 
 type Props = { venue: TVenue };
 

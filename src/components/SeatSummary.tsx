@@ -1,7 +1,7 @@
 "use client";
-import type { TVenue } from "@/types/venue";
 import { useSelection } from "@/store/selection";
 import { PRICE_BY_TIER, formatUSD } from "@/lib/pricing";
+import { TVenue } from "@/types/venue";
 
 type Props = { venue: TVenue };
 
