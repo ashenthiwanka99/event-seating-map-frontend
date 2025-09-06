@@ -53,8 +53,14 @@ export default function SeatControls({ venue }: Props) {
   }
 
   function onFind() {
-    const ids = findAdjacentSeats(Math.max(1, Math.min(8, n)));
+    const ids = findAdjacentSeats(n);
     if (ids.length) addMany(ids);
+  }
+
+  function onChangeN(e: React.ChangeEvent<HTMLInputElement>) {
+    const v = parseInt(e.target.value, 10);
+    const clamped = Number.isFinite(v) ? Math.min(8, Math.max(1, v)) : 1;
+    setN(clamped);
   }
 
   return (
@@ -76,9 +82,10 @@ export default function SeatControls({ venue }: Props) {
           min={1}
           max={8}
           value={n}
-          onChange={(e) => setN(parseInt(e.target.value || "1", 10))}
+          onChange={onChangeN}
+          inputMode="numeric"
           className="w-16 rounded-md border border-gray-300 bg-transparent px-2 py-1 text-sm"
-          aria-label="Number of adjacent seats"
+          aria-label="Number of adjacent seats (max 8)"
         />
         <button onClick={onFind} className="btn-primary">
           Find Available Seats
