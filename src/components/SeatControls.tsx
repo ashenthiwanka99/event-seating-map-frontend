@@ -52,43 +52,66 @@ export default function SeatControls({ venue }: Props) {
     return best?.ids ?? [];
   }
 
+  const remaining = Math.max(0, 8 - selected.length);
+
   function onFind() {
-    const ids = findAdjacentSeats(n);
+    const wanted = Math.min(8, Math.max(1, n));
+    const ids = findAdjacentSeats(Math.min(remaining, wanted));
     if (ids.length) addMany(ids);
   }
 
-  function onChangeN(e: React.ChangeEvent<HTMLInputElement>) {
-    const v = parseInt(e.target.value, 10);
-    const clamped = Number.isFinite(v) ? Math.min(8, Math.max(1, v)) : 1;
-    setN(clamped);
-  }
-
   return (
-    <div className="mb-3 flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
-      <label className="flex items-center gap-2 text-sm">
-        <input
-          type="checkbox"
-          checked={heatmap}
-          onChange={(e) => setHeatmap(e.target.checked)}
-          className="size-4 accent-blue-600"
-          aria-label="Toggle heat map"
-        />
-        <span>Heat-map by price tier</span>
-      </label>
+    <div className="toolbar mb-3">
+      <div className="flex items-center gap-3">
+        <button
+          type="button"
+          className="switch"
+          data-checked={heatmap ? "true" : "false"}
+          onClick={() => setHeatmap(!heatmap)}
+          aria-pressed={heatmap}
+          aria-label="Toggle heat map by price tier"
+        >
+          <span className="switch-dot" />
+        </button>
+        <span className="text-sm">Heat-map by price tier</span>
+      </div>
 
       <div className="flex items-center gap-2">
-        <input
-          type="number"
-          min={1}
-          max={8}
-          value={n}
-          onChange={onChangeN}
-          inputMode="numeric"
-          className="w-16 rounded-md border border-gray-300 bg-transparent px-2 py-1 text-sm"
-          aria-label="Number of adjacent seats (max 8)"
-        />
+        <span className="badge">Remaining {remaining}/8</span>
+        <div className="flex items-center gap-1">
+          <button
+            type="button"
+            className="btn rounded-md px-2 py-1"
+            onClick={() => setN((v) => Math.max(1, v - 1))}
+            aria-label="Decrease seats"
+          >
+            −
+          </button>
+          <input
+            type="number"
+            min={1}
+            max={8}
+            value={n}
+            onChange={(e) => {
+              const v = parseInt(e.target.value, 10);
+              setN(Number.isFinite(v) ? Math.min(8, Math.max(1, v)) : 1);
+            }}
+            inputMode="numeric"
+            className="input w-16 text-center"
+            aria-label="Number of adjacent seats (max 8)"
+          />
+          <button
+            type="button"
+            className="btn rounded-md px-2 py-1"
+            onClick={() => setN((v) => Math.min(8, v + 1))}
+            aria-label="Increase seats"
+          >
+            +
+          </button>
+        </div>
+
         <button onClick={onFind} className="btn-primary">
-          Find Available Seats
+          Find adjacent
         </button>
       </div>
     </div>

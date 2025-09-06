@@ -65,3 +65,29 @@ body {
   outline: 3px solid var(--color-seat-selected);
   outline-offset: 2px;
 }
+
+@utility card {
+  @apply rounded-xl border border-gray-200/20 bg-white/5 dark:bg-white/5 backdrop-blur p-3 md:p-4;
+}
+@utility toolbar {
+  @apply card flex flex-col gap-3 md:flex-row md:items-center md:justify-between;
+}
+@utility input {
+  @apply rounded-md border border-gray-300/30 bg-black/20 text-white/90 px-3 py-2 text-sm
+          placeholder:text-white/50 focus:outline-2 focus:outline-offset-2 focus:outline-primary;
+}
+@utility switch {
+  @apply relative inline-flex h-6 w-11 items-center rounded-full bg-gray-500/40 transition-colors;
+}
+@utility switch-dot {
+  @apply size-5 translate-x-0.5 rounded-full bg-white transition-transform;
+}
+.switch[data-checked="true"] { @apply bg-primary/80 }
+.switch[data-checked="true"] .switch-dot { transform: translateX(1.375rem); }
+
+@utility badge {
+  @apply inline-flex items-center gap-1 rounded-full px-2 py-1 text-xs font-medium bg-white/10;
+}
+@utility grid-wrap {
+  @apply card overflow-hidden md:overflow-visible border border-white/15;
+}

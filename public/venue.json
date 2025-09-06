@@ -1,1013 +1,190 @@
 {
-    "venueId": "grid-8x17",
-    "name": "Sample Arena",
-    "map": {
-        "width": 900,
-        "height": 420
-    },
-    "sections": [
+  "venueId": "grid-8x17",
+  "name": "Sample Arena",
+  "map": { "width": 900, "height": 420 },
+  "sections": [
+    {
+      "id": "M",
+      "label": "Main",
+      "transform": { "x": 60, "y": 50, "scale": 1 },
+      "rows": [
         {
-            "id": "M",
-            "label": "Main",
-            "transform": {
-                "x": 60,
-                "y": 50,
-                "scale": 1
-            },
-            "rows": [
-                {
-                    "index": 1,
-                    "seats": [
-                        {
-                            "id": "M-1-01",
-                            "col": 1,
-                            "x": 0,
-                            "y": 0,
-                            "priceTier": 1
-                        },
-                        {
-                            "id": "M-1-02",
-                            "col": 2,
-                            "x": 36,
-                            "y": 0,
-                            "priceTier": 1
-                        },
-                        {
-                            "id": "M-1-03",
-                            "col": 3,
-                            "x": 72,
-                            "y": 0,
-                            "priceTier": 1
-                        },
-                        {
-                            "id": "M-1-04",
-                            "col": 4,
-                            "x": 108,
-                            "y": 0,
-                            "priceTier": 1
-                        },
-                        {
-                            "id": "M-1-05",
-                            "col": 5,
-                            "x": 144,
-                            "y": 0,
-                            "priceTier": 1
-                        },
-                        {
-                            "id": "M-1-06",
-                            "col": 6,
-                            "x": 180,
-                            "y": 0,
-                            "priceTier": 1
-                        },
-                        {
-                            "id": "M-1-07",
-                            "col": 7,
-                            "x": 216,
-                            "y": 0,
-                            "priceTier": 1
-                        },
-                        {
-                            "id": "M-1-08",
-                            "col": 8,
-                            "x": 252,
-                            "y": 0,
-                            "priceTier": 1
-                        },
-                        {
-                            "id": "M-1-09",
-                            "col": 9,
-                            "x": 288,
-                            "y": 0,
-                            "priceTier": 1
-                        },
-                        {
-                            "id": "M-1-10",
-                            "col": 10,
-                            "x": 324,
-                            "y": 0,
-                            "priceTier": 1
-                        },
-                        {
-                            "id": "M-1-11",
-                            "col": 11,
-                            "x": 360,
-                            "y": 0,
-                            "priceTier": 1
-                        },
-                        {
-                            "id": "M-1-12",
-                            "col": 12,
-                            "x": 396,
-                            "y": 0,
-                            "priceTier": 1
-                        },
-                        {
-                            "id": "M-1-13",
-                            "col": 13,
-                            "x": 432,
-                            "y": 0,
-                            "priceTier": 1
-                        },
-                        {
-                            "id": "M-1-14",
-                            "col": 14,
-                            "x": 468,
-                            "y": 0,
-                            "priceTier": 1
-                        },
-                        {
-                            "id": "M-1-15",
-                            "col": 15,
-                            "x": 504,
-                            "y": 0,
-                            "priceTier": 1
-                        },
-                        {
-                            "id": "M-1-16",
-                            "col": 16,
-                            "x": 540,
-                            "y": 0,
-                            "priceTier": 1
-                        },
-                        {
-                            "id": "M-1-17",
-                            "col": 17,
-                            "x": 576,
-                            "y": 0,
-                            "priceTier": 1
-                        }
-                    ]
-                },
-                {
-                    "index": 2,
-                    "seats": [
-                        {
-                            "id": "M-2-01",
-                            "col": 1,
-                            "x": 0,
-                            "y": 36,
-                            "priceTier": 1
-                        },
-                        {
-                            "id": "M-2-02",
-                            "col": 2,
-                            "x": 36,
-                            "y": 36,
-                            "priceTier": 1
-                        },
-                        {
-                            "id": "M-2-03",
-                            "col": 3,
-                            "x": 72,
-                            "y": 36,
-                            "priceTier": 1
-                        },
-                        {
-                            "id": "M-2-04",
-                            "col": 4,
-                            "x": 108,
-                            "y": 36,
-                            "priceTier": 1
-                        },
-                        {
-                            "id": "M-2-05",
-                            "col": 5,
-                            "x": 144,
-                            "y": 36,
-                            "priceTier": 1
-                        },
-                        {
-                            "id": "M-2-06",
-                            "col": 6,
-                            "x": 180,
-                            "y": 36,
-                            "priceTier": 1
-                        },
-                        {
-                            "id": "M-2-07",
-                            "col": 7,
-                            "x": 216,
-                            "y": 36,
-                            "priceTier": 1
-                        },
-                        {
-                            "id": "M-2-08",
-                            "col": 8,
-                            "x": 252,
-                            "y": 36,
-                            "priceTier": 1
-                        },
-                        {
-                            "id": "M-2-09",
-                            "col": 9,
-                            "x": 288,
-                            "y": 36,
-                            "priceTier": 1
-                        },
-                        {
-                            "id": "M-2-10",
-                            "col": 10,
-                            "x": 324,
-                            "y": 36,
-                            "priceTier": 1
-                        },
-                        {
-                            "id": "M-2-11",
-                            "col": 11,
-                            "x": 360,
-                            "y": 36,
-                            "priceTier": 1
-                        },
-                        {
-                            "id": "M-2-12",
-                            "col": 12,
-                            "x": 396,
-                            "y": 36,
-                            "priceTier": 1
-                        },
-                        {
-                            "id": "M-2-13",
-                            "col": 13,
-                            "x": 432,
-                            "y": 36,
-                            "priceTier": 1
-                        },
-                        {
-                            "id": "M-2-14",
-                            "col": 14,
-                            "x": 468,
-                            "y": 36,
-                            "priceTier": 1
-                        },
-                        {
-                            "id": "M-2-15",
-                            "col": 15,
-                            "x": 504,
-                            "y": 36,
-                            "priceTier": 1
-                        },
-                        {
-                            "id": "M-2-16",
-                            "col": 16,
-                            "x": 540,
-                            "y": 36,
-                            "priceTier": 1
-                        },
-                        {
-                            "id": "M-2-17",
-                            "col": 17,
-                            "x": 576,
-                            "y": 36,
-                            "priceTier": 1
-                        }
-                    ]
-                },
-                {
-                    "index": 3,
-                    "seats": [
-                        {
-                            "id": "M-3-01",
-                            "col": 1,
-                            "x": 0,
-                            "y": 72,
-                            "priceTier": 2
-                        },
-                        {
-                            "id": "M-3-02",
-                            "col": 2,
-                            "x": 36,
-                            "y": 72,
-                            "priceTier": 2
-                        },
-                        {
-                            "id": "M-3-03",
-                            "col": 3,
-                            "x": 72,
-                            "y": 72,
-                            "priceTier": 2
-                        },
-                        {
-                            "id": "M-3-04",
-                            "col": 4,
-                            "x": 108,
-                            "y": 72,
-                            "priceTier": 2
-                        },
-                        {
-                            "id": "M-3-05",
-                            "col": 5,
-                            "x": 144,
-                            "y": 72,
-                            "priceTier": 2
-                        },
-                        {
-                            "id": "M-3-06",
-                            "col": 6,
-                            "x": 180,
-                            "y": 72,
-                            "priceTier": 2
-                        },
-                        {
-                            "id": "M-3-07",
-                            "col": 7,
-                            "x": 216,
-                            "y": 72,
-                            "priceTier": 2
-                        },
-                        {
-                            "id": "M-3-08",
-                            "col": 8,
-                            "x": 252,
-                            "y": 72,
-                            "priceTier": 2
-                        },
-                        {
-                            "id": "M-3-09",
-                            "col": 9,
-                            "x": 288,
-                            "y": 72,
-                            "priceTier": 2
-                        },
-                        {
-                            "id": "M-3-10",
-                            "col": 10,
-                            "x": 324,
-                            "y": 72,
-                            "priceTier": 2
-                        },
-                        {
-                            "id": "M-3-11",
-                            "col": 11,
-                            "x": 360,
-                            "y": 72,
-                            "priceTier": 2
-                        },
-                        {
-                            "id": "M-3-12",
-                            "col": 12,
-                            "x": 396,
-                            "y": 72,
-                            "priceTier": 2
-                        },
-                        {
-                            "id": "M-3-13",
-                            "col": 13,
-                            "x": 432,
-                            "y": 72,
-                            "priceTier": 2
-                        },
-                        {
-                            "id": "M-3-14",
-                            "col": 14,
-                            "x": 468,
-                            "y": 72,
-                            "priceTier": 2
-                        },
-                        {
-                            "id": "M-3-15",
-                            "col": 15,
-                            "x": 504,
-                            "y": 72,
-                            "priceTier": 2
-                        },
-                        {
-                            "id": "M-3-16",
-                            "col": 16,
-                            "x": 540,
-                            "y": 72,
-                            "priceTier": 2
-                        },
-                        {
-                            "id": "M-3-17",
-                            "col": 17,
-                            "x": 576,
-                            "y": 72,
-                            "priceTier": 2
-                        }
-                    ]
-                },
-                {
-                    "index": 4,
-                    "seats": [
-                        {
-                            "id": "M-4-01",
-                            "col": 1,
-                            "x": 0,
-                            "y": 108,
-                            "priceTier": 2
-                        },
-                        {
-                            "id": "M-4-02",
-                            "col": 2,
-                            "x": 36,
-                            "y": 108,
-                            "priceTier": 2
-                        },
-                        {
-                            "id": "M-4-03",
-                            "col": 3,
-                            "x": 72,
-                            "y": 108,
-                            "priceTier": 2
-                        },
-                        {
-                            "id": "M-4-04",
-                            "col": 4,
-                            "x": 108,
-                            "y": 108,
-                            "priceTier": 2
-                        },
-                        {
-                            "id": "M-4-05",
-                            "col": 5,
-                            "x": 144,
-                            "y": 108,
-                            "priceTier": 2
-                        },
-                        {
-                            "id": "M-4-06",
-                            "col": 6,
-                            "x": 180,
-                            "y": 108,
-                            "priceTier": 2
-                        },
-                        {
-                            "id": "M-4-07",
-                            "col": 7,
-                            "x": 216,
-                            "y": 108,
-                            "priceTier": 2
-                        },
-                        {
-                            "id": "M-4-08",
-                            "col": 8,
-                            "x": 252,
-                            "y": 108,
-                            "priceTier": 2
-                        },
-                        {
-                            "id": "M-4-09",
-                            "col": 9,
-                            "x": 288,
-                            "y": 108,
-                            "priceTier": 2
-                        },
-                        {
-                            "id": "M-4-10",
-                            "col": 10,
-                            "x": 324,
-                            "y": 108,
-                            "priceTier": 2
-                        },
-                        {
-                            "id": "M-4-11",
-                            "col": 11,
-                            "x": 360,
-                            "y": 108,
-                            "priceTier": 2
-                        },
-                        {
-                            "id": "M-4-12",
-                            "col": 12,
-                            "x": 396,
-                            "y": 108,
-                            "priceTier": 2
-                        },
-                        {
-                            "id": "M-4-13",
-                            "col": 13,
-                            "x": 432,
-                            "y": 108,
-                            "priceTier": 2
-                        },
-                        {
-                            "id": "M-4-14",
-                            "col": 14,
-                            "x": 468,
-                            "y": 108,
-                            "priceTier": 2
-                        },
-                        {
-                            "id": "M-4-15",
-                            "col": 15,
-                            "x": 504,
-                            "y": 108,
-                            "priceTier": 2
-                        },
-                        {
-                            "id": "M-4-16",
-                            "col": 16,
-                            "x": 540,
-                            "y": 108,
-                            "priceTier": 2
-                        },
-                        {
-                            "id": "M-4-17",
-                            "col": 17,
-                            "x": 576,
-                            "y": 108,
-                            "priceTier": 2
-                        }
-                    ]
-                },
-                {
-                    "index": 5,
-                    "seats": [
-                        {
-                            "id": "M-5-01",
-                            "col": 1,
-                            "x": 0,
-                            "y": 144,
-                            "priceTier": 3
-                        },
-                        {
-                            "id": "M-5-02",
-                            "col": 2,
-                            "x": 36,
-                            "y": 144,
-                            "priceTier": 3
-                        },
-                        {
-                            "id": "M-5-03",
-                            "col": 3,
-                            "x": 72,
-                            "y": 144,
-                            "priceTier": 3
-                        },
-                        {
-                            "id": "M-5-04",
-                            "col": 4,
-                            "x": 108,
-                            "y": 144,
-                            "priceTier": 3
-                        },
-                        {
-                            "id": "M-5-05",
-                            "col": 5,
-                            "x": 144,
-                            "y": 144,
-                            "priceTier": 3
-                        },
-                        {
-                            "id": "M-5-06",
-                            "col": 6,
-                            "x": 180,
-                            "y": 144,
-                            "priceTier": 3
-                        },
-                        {
-                            "id": "M-5-07",
-                            "col": 7,
-                            "x": 216,
-                            "y": 144,
-                            "priceTier": 3
-                        },
-                        {
-                            "id": "M-5-08",
-                            "col": 8,
-                            "x": 252,
-                            "y": 144,
-                            "priceTier": 3
-                        },
-                        {
-                            "id": "M-5-09",
-                            "col": 9,
-                            "x": 288,
-                            "y": 144,
-                            "priceTier": 3
-                        },
-                        {
-                            "id": "M-5-10",
-                            "col": 10,
-                            "x": 324,
-                            "y": 144,
-                            "priceTier": 3
-                        },
-                        {
-                            "id": "M-5-11",
-                            "col": 11,
-                            "x": 360,
-                            "y": 144,
-                            "priceTier": 3
-                        },
-                        {
-                            "id": "M-5-12",
-                            "col": 12,
-                            "x": 396,
-                            "y": 144,
-                            "priceTier": 3
-                        },
-                        {
-                            "id": "M-5-13",
-                            "col": 13,
-                            "x": 432,
-                            "y": 144,
-                            "priceTier": 3
-                        },
-                        {
-                            "id": "M-5-14",
-                            "col": 14,
-                            "x": 468,
-                            "y": 144,
-                            "priceTier": 3
-                        },
-                        {
-                            "id": "M-5-15",
-                            "col": 15,
-                            "x": 504,
-                            "y": 144,
-                            "priceTier": 3
-                        },
-                        {
-                            "id": "M-5-16",
-                            "col": 16,
-                            "x": 540,
-                            "y": 144,
-                            "priceTier": 3
-                        },
-                        {
-                            "id": "M-5-17",
-                            "col": 17,
-                            "x": 576,
-                            "y": 144,
-                            "priceTier": 3
-                        }
-                    ]
-                },
-                {
-                    "index": 6,
-                    "seats": [
-                        {
-                            "id": "M-6-01",
-                            "col": 1,
-                            "x": 0,
-                            "y": 180,
-                            "priceTier": 3
-                        },
-                        {
-                            "id": "M-6-02",
-                            "col": 2,
-                            "x": 36,
-                            "y": 180,
-                            "priceTier": 3
-                        },
-                        {
-                            "id": "M-6-03",
-                            "col": 3,
-                            "x": 72,
-                            "y": 180,
-                            "priceTier": 3
-                        },
-                        {
-                            "id": "M-6-04",
-                            "col": 4,
-                            "x": 108,
-                            "y": 180,
-                            "priceTier": 3
-                        },
-                        {
-                            "id": "M-6-05",
-                            "col": 5,
-                            "x": 144,
-                            "y": 180,
-                            "priceTier": 3
-                        },
-                        {
-                            "id": "M-6-06",
-                            "col": 6,
-                            "x": 180,
-                            "y": 180,
-                            "priceTier": 3
-                        },
-                        {
-                            "id": "M-6-07",
-                            "col": 7,
-                            "x": 216,
-                            "y": 180,
-                            "priceTier": 3
-                        },
-                        {
-                            "id": "M-6-08",
-                            "col": 8,
-                            "x": 252,
-                            "y": 180,
-                            "priceTier": 3
-                        },
-                        {
-                            "id": "M-6-09",
-                            "col": 9,
-                            "x": 288,
-                            "y": 180,
-                            "priceTier": 3
-                        },
-                        {
-                            "id": "M-6-10",
-                            "col": 10,
-                            "x": 324,
-                            "y": 180,
-                            "priceTier": 3
-                        },
-                        {
-                            "id": "M-6-11",
-                            "col": 11,
-                            "x": 360,
-                            "y": 180,
-                            "priceTier": 3
-                        },
-                        {
-                            "id": "M-6-12",
-                            "col": 12,
-                            "x": 396,
-                            "y": 180,
-                            "priceTier": 3
-                        },
-                        {
-                            "id": "M-6-13",
-                            "col": 13,
-                            "x": 432,
-                            "y": 180,
-                            "priceTier": 3
-                        },
-                        {
-                            "id": "M-6-14",
-                            "col": 14,
-                            "x": 468,
-                            "y": 180,
-                            "priceTier": 3
-                        },
-                        {
-                            "id": "M-6-15",
-                            "col": 15,
-                            "x": 504,
-                            "y": 180,
-                            "priceTier": 3
-                        },
-                        {
-                            "id": "M-6-16",
-                            "col": 16,
-                            "x": 540,
-                            "y": 180,
-                            "priceTier": 3
-                        },
-                        {
-                            "id": "M-6-17",
-                            "col": 17,
-                            "x": 576,
-                            "y": 180,
-                            "priceTier": 3
-                        }
-                    ]
-                },
-                {
-                    "index": 7,
-                    "seats": [
-                        {
-                            "id": "M-7-01",
-                            "col": 1,
-                            "x": 0,
-                            "y": 216,
-                            "priceTier": 4
-                        },
-                        {
-                            "id": "M-7-02",
-                            "col": 2,
-                            "x": 36,
-                            "y": 216,
-                            "priceTier": 4
-                        },
-                        {
-                            "id": "M-7-03",
-                            "col": 3,
-                            "x": 72,
-                            "y": 216,
-                            "priceTier": 4
-                        },
-                        {
-                            "id": "M-7-04",
-                            "col": 4,
-                            "x": 108,
-                            "y": 216,
-                            "priceTier": 4
-                        },
-                        {
-                            "id": "M-7-05",
-                            "col": 5,
-                            "x": 144,
-                            "y": 216,
-                            "priceTier": 4
-                        },
-                        {
-                            "id": "M-7-06",
-                            "col": 6,
-                            "x": 180,
-                            "y": 216,
-                            "priceTier": 4
-                        },
-                        {
-                            "id": "M-7-07",
-                            "col": 7,
-                            "x": 216,
-                            "y": 216,
-                            "priceTier": 4
-                        },
-                        {
-                            "id": "M-7-08",
-                            "col": 8,
-                            "x": 252,
-                            "y": 216,
-                            "priceTier": 4
-                        },
-                        {
-                            "id": "M-7-09",
-                            "col": 9,
-                            "x": 288,
-                            "y": 216,
-                            "priceTier": 4
-                        },
-                        {
-                            "id": "M-7-10",
-                            "col": 10,
-                            "x": 324,
-                            "y": 216,
-                            "priceTier": 4
-                        },
-                        {
-                            "id": "M-7-11",
-                            "col": 11,
-                            "x": 360,
-                            "y": 216,
-                            "priceTier": 4
-                        },
-                        {
-                            "id": "M-7-12",
-                            "col": 12,
-                            "x": 396,
-                            "y": 216,
-                            "priceTier": 4
-                        },
-                        {
-                            "id": "M-7-13",
-                            "col": 13,
-                            "x": 432,
-                            "y": 216,
-                            "priceTier": 4
-                        },
-                        {
-                            "id": "M-7-14",
-                            "col": 14,
-                            "x": 468,
-                            "y": 216,
-                            "priceTier": 4
-                        },
-                        {
-                            "id": "M-7-15",
-                            "col": 15,
-                            "x": 504,
-                            "y": 216,
-                            "priceTier": 4
-                        },
-                        {
-                            "id": "M-7-16",
-                            "col": 16,
-                            "x": 540,
-                            "y": 216,
-                            "priceTier": 4
-                        },
-                        {
-                            "id": "M-7-17",
-                            "col": 17,
-                            "x": 576,
-                            "y": 216,
-                            "priceTier": 4
-                        }
-                    ]
-                },
-                {
-                    "index": 8,
-                    "seats": [
-                        {
-                            "id": "M-8-01",
-                            "col": 1,
-                            "x": 0,
-                            "y": 252,
-                            "priceTier": 4
-                        },
-                        {
-                            "id": "M-8-02",
-                            "col": 2,
-                            "x": 36,
-                            "y": 252,
-                            "priceTier": 4
-                        },
-                        {
-                            "id": "M-8-03",
-                            "col": 3,
-                            "x": 72,
-                            "y": 252,
-                            "priceTier": 4
-                        },
-                        {
-                            "id": "M-8-04",
-                            "col": 4,
-                            "x": 108,
-                            "y": 252,
-                            "priceTier": 4
-                        },
-                        {
-                            "id": "M-8-05",
-                            "col": 5,
-                            "x": 144,
-                            "y": 252,
-                            "priceTier": 4
-                        },
-                        {
-                            "id": "M-8-06",
-                            "col": 6,
-                            "x": 180,
-                            "y": 252,
-                            "priceTier": 4
-                        },
-                        {
-                            "id": "M-8-07",
-                            "col": 7,
-                            "x": 216,
-                            "y": 252,
-                            "priceTier": 4
-                        },
-                        {
-                            "id": "M-8-08",
-                            "col": 8,
-                            "x": 252,
-                            "y": 252,
-                            "priceTier": 4
-                        },
-                        {
-                            "id": "M-8-09",
-                            "col": 9,
-                            "x": 288,
-                            "y": 252,
-                            "priceTier": 4
-                        },
-                        {
-                            "id": "M-8-10",
-                            "col": 10,
-                            "x": 324,
-                            "y": 252,
-                            "priceTier": 4
-                        },
-                        {
-                            "id": "M-8-11",
-                            "col": 11,
-                            "x": 360,
-                            "y": 252,
-                            "priceTier": 4
-                        },
-                        {
-                            "id": "M-8-12",
-                            "col": 12,
-                            "x": 396,
-                            "y": 252,
-                            "priceTier": 4
-                        },
-                        {
-                            "id": "M-8-13",
-                            "col": 13,
-                            "x": 432,
-                            "y": 252,
-                            "priceTier": 4
-                        },
-                        {
-                            "id": "M-8-14",
-                            "col": 14,
-                            "x": 468,
-                            "y": 252,
-                            "priceTier": 4
-                        },
-                        {
-                            "id": "M-8-15",
-                            "col": 15,
-                            "x": 504,
-                            "y": 252,
-                            "priceTier": 4
-                        },
-                        {
-                            "id": "M-8-16",
-                            "col": 16,
-                            "x": 540,
-                            "y": 252,
-                            "priceTier": 4
-                        },
-                        {
-                            "id": "M-8-17",
-                            "col": 17,
-                            "x": 576,
-                            "y": 252,
-                            "priceTier": 4
-                        }
-                    ]
-                }
-            ]
+          "index": 1,
+          "seats": [
+            { "id": "M-1-01", "col": 1,  "x": 0,   "y": 0,  "priceTier": 1, "status": "reserved" },
+            { "id": "M-1-02", "col": 2,  "x": 36,  "y": 0,  "priceTier": 1, "status": "available" },
+            { "id": "M-1-03", "col": 3,  "x": 72,  "y": 0,  "priceTier": 1, "status": "reserved" },
+            { "id": "M-1-04", "col": 4,  "x": 108, "y": 0,  "priceTier": 1, "status": "available" },
+            { "id": "M-1-05", "col": 5,  "x": 144, "y": 0,  "priceTier": 1, "status": "available" },
+            { "id": "M-1-06", "col": 6,  "x": 180, "y": 0,  "priceTier": 1, "status": "available" },
+            { "id": "M-1-07", "col": 7,  "x": 216, "y": 0,  "priceTier": 1, "status": "available" },
+            { "id": "M-1-08", "col": 8,  "x": 252, "y": 0,  "priceTier": 1, "status": "available" },
+            { "id": "M-1-09", "col": 9,  "x": 288, "y": 0,  "priceTier": 1, "status": "available" },
+            { "id": "M-1-10", "col": 10, "x": 324, "y": 0,  "priceTier": 1, "status": "available" },
+            { "id": "M-1-11", "col": 11, "x": 360, "y": 0,  "priceTier": 1, "status": "sold" },
+            { "id": "M-1-12", "col": 12, "x": 396, "y": 0,  "priceTier": 1, "status": "available" },
+            { "id": "M-1-13", "col": 13, "x": 432, "y": 0,  "priceTier": 1, "status": "available" },
+            { "id": "M-1-14", "col": 14, "x": 468, "y": 0,  "priceTier": 1, "status": "held" },
+            { "id": "M-1-15", "col": 15, "x": 504, "y": 0,  "priceTier": 1, "status": "available" },
+            { "id": "M-1-16", "col": 16, "x": 540, "y": 0,  "priceTier": 1, "status": "available" },
+            { "id": "M-1-17", "col": 17, "x": 576, "y": 0,  "priceTier": 1, "status": "available" }
+          ]
+        },
+        {
+          "index": 2,
+          "seats": [
+            { "id": "M-2-01", "col": 1,  "x": 0,   "y": 36, "priceTier": 1, "status": "available" },
+            { "id": "M-2-02", "col": 2,  "x": 36,  "y": 36, "priceTier": 1, "status": "available" },
+            { "id": "M-2-03", "col": 3,  "x": 72,  "y": 36, "priceTier": 1, "status": "available" },
+            { "id": "M-2-04", "col": 4,  "x": 108, "y": 36, "priceTier": 1, "status": "available" },
+            { "id": "M-2-05", "col": 5,  "x": 144, "y": 36, "priceTier": 1, "status": "sold" },
+            { "id": "M-2-06", "col": 6,  "x": 180, "y": 36, "priceTier": 1, "status": "sold" },
+            { "id": "M-2-07", "col": 7,  "x": 216, "y": 36, "priceTier": 1, "status": "available" },
+            { "id": "M-2-08", "col": 8,  "x": 252, "y": 36, "priceTier": 1, "status": "available" },
+            { "id": "M-2-09", "col": 9,  "x": 288, "y": 36, "priceTier": 1, "status": "available" },
+            { "id": "M-2-10", "col": 10, "x": 324, "y": 36, "priceTier": 1, "status": "available" },
+            { "id": "M-2-11", "col": 11, "x": 360, "y": 36, "priceTier": 1, "status": "available" },
+            { "id": "M-2-12", "col": 12, "x": 396, "y": 36, "priceTier": 1, "status": "held" },
+            { "id": "M-2-13", "col": 13, "x": 432, "y": 36, "priceTier": 1, "status": "available" },
+            { "id": "M-2-14", "col": 14, "x": 468, "y": 36, "priceTier": 1, "status": "available" },
+            { "id": "M-2-15", "col": 15, "x": 504, "y": 36, "priceTier": 1, "status": "available" },
+            { "id": "M-2-16", "col": 16, "x": 540, "y": 36, "priceTier": 1, "status": "reserved" },
+            { "id": "M-2-17", "col": 17, "x": 576, "y": 36, "priceTier": 1, "status": "available" }
+          ]
+        },
+        {
+          "index": 3,
+          "seats": [
+            { "id": "M-3-01", "col": 1,  "x": 0,   "y": 72, "priceTier": 2, "status": "available" },
+            { "id": "M-3-02", "col": 2,  "x": 36,  "y": 72, "priceTier": 2, "status": "available" },
+            { "id": "M-3-03", "col": 3,  "x": 72,  "y": 72, "priceTier": 2, "status": "available" },
+            { "id": "M-3-04", "col": 4,  "x": 108, "y": 72, "priceTier": 2, "status": "available" },
+            { "id": "M-3-05", "col": 5,  "x": 144, "y": 72, "priceTier": 2, "status": "available" },
+            { "id": "M-3-06", "col": 6,  "x": 180, "y": 72, "priceTier": 2, "status": "available" },
+            { "id": "M-3-07", "col": 7,  "x": 216, "y": 72, "priceTier": 2, "status": "reserved" },
+            { "id": "M-3-08", "col": 8,  "x": 252, "y": 72, "priceTier": 2, "status": "reserved" },
+            { "id": "M-3-09", "col": 9,  "x": 288, "y": 72, "priceTier": 2, "status": "reserved" },
+            { "id": "M-3-10", "col": 10, "x": 324, "y": 72, "priceTier": 2, "status": "available" },
+            { "id": "M-3-11", "col": 11, "x": 360, "y": 72, "priceTier": 2, "status": "available" },
+            { "id": "M-3-12", "col": 12, "x": 396, "y": 72, "priceTier": 2, "status": "available" },
+            { "id": "M-3-13", "col": 13, "x": 432, "y": 72, "priceTier": 2, "status": "available" },
+            { "id": "M-3-14", "col": 14, "x": 468, "y": 72, "priceTier": 2, "status": "available" },
+            { "id": "M-3-15", "col": 15, "x": 504, "y": 72, "priceTier": 2, "status": "sold" },
+            { "id": "M-3-16", "col": 16, "x": 540, "y": 72, "priceTier": 2, "status": "available" },
+            { "id": "M-3-17", "col": 17, "x": 576, "y": 72, "priceTier": 2, "status": "available" }
+          ]
+        },
+        {
+          "index": 4,
+          "seats": [
+            { "id": "M-4-01", "col": 1,  "x": 0,   "y": 108, "priceTier": 2, "status": "available" },
+            { "id": "M-4-02", "col": 2,  "x": 36,  "y": 108, "priceTier": 2, "status": "held" },
+            { "id": "M-4-03", "col": 3,  "x": 72,  "y": 108, "priceTier": 2, "status": "available" },
+            { "id": "M-4-04", "col": 4,  "x": 108, "y": 108, "priceTier": 2, "status": "available" },
+            { "id": "M-4-05", "col": 5,  "x": 144, "y": 108, "priceTier": 2, "status": "available" },
+            { "id": "M-4-06", "col": 6,  "x": 180, "y": 108, "priceTier": 2, "status": "available" },
+            { "id": "M-4-07", "col": 7,  "x": 216, "y": 108, "priceTier": 2, "status": "reserved" },
+            { "id": "M-4-08", "col": 8,  "x": 252, "y": 108, "priceTier": 2, "status": "reserved" },
+            { "id": "M-4-09", "col": 9,  "x": 288, "y": 108, "priceTier": 2, "status": "reserved" },
+            { "id": "M-4-10", "col": 10, "x": 324, "y": 108, "priceTier": 2, "status": "reserved" },
+            { "id": "M-4-11", "col": 11, "x": 360, "y": 108, "priceTier": 2, "status": "reserved" },
+            { "id": "M-4-12", "col": 12, "x": 396, "y": 108, "priceTier": 2, "status": "available" },
+            { "id": "M-4-13", "col": 13, "x": 432, "y": 108, "priceTier": 2, "status": "available" },
+            { "id": "M-4-14", "col": 14, "x": 468, "y": 108, "priceTier": 2, "status": "available" },
+            { "id": "M-4-15", "col": 15, "x": 504, "y": 108, "priceTier": 2, "status": "available" },
+            { "id": "M-4-16", "col": 16, "x": 540, "y": 108, "priceTier": 2, "status": "available" },
+            { "id": "M-4-17", "col": 17, "x": 576, "y": 108, "priceTier": 2, "status": "available" }
+          ]
+        },
+        {
+          "index": 5,
+          "seats": [
+            { "id": "M-5-01", "col": 1,  "x": 0,   "y": 144, "priceTier": 3, "status": "available" },
+            { "id": "M-5-02", "col": 2,  "x": 36,  "y": 144, "priceTier": 3, "status": "available" },
+            { "id": "M-5-03", "col": 3,  "x": 72,  "y": 144, "priceTier": 3, "status": "held" },
+            { "id": "M-5-04", "col": 4,  "x": 108, "y": 144, "priceTier": 3, "status": "available" },
+            { "id": "M-5-05", "col": 5,  "x": 144, "y": 144, "priceTier": 3, "status": "available" },
+            { "id": "M-5-06", "col": 6,  "x": 180, "y": 144, "priceTier": 3, "status": "available" },
+            { "id": "M-5-07", "col": 7,  "x": 216, "y": 144, "priceTier": 3, "status": "available" },
+            { "id": "M-5-08", "col": 8,  "x": 252, "y": 144, "priceTier": 3, "status": "available" },
+            { "id": "M-5-09", "col": 9,  "x": 288, "y": 144, "priceTier": 3, "status": "available" },
+            { "id": "M-5-10", "col": 10, "x": 324, "y": 144, "priceTier": 3, "status": "sold" },
+            { "id": "M-5-11", "col": 11, "x": 360, "y": 144, "priceTier": 3, "status": "reserved" },
+            { "id": "M-5-12", "col": 12, "x": 396, "y": 144, "priceTier": 3, "status": "available" },
+            { "id": "M-5-13", "col": 13, "x": 432, "y": 144, "priceTier": 3, "status": "available" },
+            { "id": "M-5-14", "col": 14, "x": 468, "y": 144, "priceTier": 3, "status": "available" },
+            { "id": "M-5-15", "col": 15, "x": 504, "y": 144, "priceTier": 3, "status": "available" },
+            { "id": "M-5-16", "col": 16, "x": 540, "y": 144, "priceTier": 3, "status": "available" },
+            { "id": "M-5-17", "col": 17, "x": 576, "y": 144, "priceTier": 3, "status": "available" }
+          ]
+        },
+        {
+          "index": 6,
+          "seats": [
+            { "id": "M-6-01", "col": 1,  "x": 0,   "y": 180, "priceTier": 3, "status": "available" },
+            { "id": "M-6-02", "col": 2,  "x": 36,  "y": 180, "priceTier": 3, "status": "sold" },
+            { "id": "M-6-03", "col": 3,  "x": 72,  "y": 180, "priceTier": 3, "status": "available" },
+            { "id": "M-6-04", "col": 4,  "x": 108, "y": 180, "priceTier": 3, "status": "available" },
+            { "id": "M-6-05", "col": 5,  "x": 144, "y": 180, "priceTier": 3, "status": "available" },
+            { "id": "M-6-06", "col": 6,  "x": 180, "y": 180, "priceTier": 3, "status": "available" },
+            { "id": "M-6-07", "col": 7,  "x": 216, "y": 180, "priceTier": 3, "status": "available" },
+            { "id": "M-6-08", "col": 8,  "x": 252, "y": 180, "priceTier": 3, "status": "available" },
+            { "id": "M-6-09", "col": 9,  "x": 288, "y": 180, "priceTier": 3, "status": "available" },
+            { "id": "M-6-10", "col": 10, "x": 324, "y": 180, "priceTier": 3, "status": "reserved" },
+            { "id": "M-6-11", "col": 11, "x": 360, "y": 180, "priceTier": 3, "status": "available" },
+            { "id": "M-6-12", "col": 12, "x": 396, "y": 180, "priceTier": 3, "status": "available" },
+            { "id": "M-6-13", "col": 13, "x": 432, "y": 180, "priceTier": 3, "status": "reserved" },
+            { "id": "M-6-14", "col": 14, "x": 468, "y": 180, "priceTier": 3, "status": "available" },
+            { "id": "M-6-15", "col": 15, "x": 504, "y": 180, "priceTier": 3, "status": "available" },
+            { "id": "M-6-16", "col": 16, "x": 540, "y": 180, "priceTier": 3, "status": "available" },
+            { "id": "M-6-17", "col": 17, "x": 576, "y": 180, "priceTier": 3, "status": "available" }
+          ]
+        },
+        {
+          "index": 7,
+          "seats": [
+            { "id": "M-7-01", "col": 1,  "x": 0,   "y": 216, "priceTier": 4, "status": "available" },
+            { "id": "M-7-02", "col": 2,  "x": 36,  "y": 216, "priceTier": 4, "status": "available" },
+            { "id": "M-7-03", "col": 3,  "x": 72,  "y": 216, "priceTier": 4, "status": "available" },
+            { "id": "M-7-04", "col": 4,  "x": 108, "y": 216, "priceTier": 4, "status": "available" },
+            { "id": "M-7-05", "col": 5,  "x": 144, "y": 216, "priceTier": 4, "status": "held" },
+            { "id": "M-7-06", "col": 6,  "x": 180, "y": 216, "priceTier": 4, "status": "available" },
+            { "id": "M-7-07", "col": 7,  "x": 216, "y": 216, "priceTier": 4, "status": "available" },
+            { "id": "M-7-08", "col": 8,  "x": 252, "y": 216, "priceTier": 4, "status": "available" },
+            { "id": "M-7-09", "col": 9,  "x": 288, "y": 216, "priceTier": 4, "status": "available" },
+            { "id": "M-7-10", "col": 10, "x": 324, "y": 216, "priceTier": 4, "status": "available" },
+            { "id": "M-7-11", "col": 11, "x": 360, "y": 216, "priceTier": 4, "status": "available" },
+            { "id": "M-7-12", "col": 12, "x": 396, "y": 216, "priceTier": 4, "status": "available" },
+            { "id": "M-7-13", "col": 13, "x": 432, "y": 216, "priceTier": 4, "status": "available" },
+            { "id": "M-7-14", "col": 14, "x": 468, "y": 216, "priceTier": 4, "status": "reserved" },
+            { "id": "M-7-15", "col": 15, "x": 504, "y": 216, "priceTier": 4, "status": "available" },
+            { "id": "M-7-16", "col": 16, "x": 540, "y": 216, "priceTier": 4, "status": "sold" },
+            { "id": "M-7-17", "col": 17, "x": 576, "y": 216, "priceTier": 4, "status": "available" }
+          ]
+        },
+        {
+          "index": 8,
+          "seats": [
+            { "id": "M-8-01", "col": 1,  "x": 0,   "y": 252, "priceTier": 4, "status": "available" },
+            { "id": "M-8-02", "col": 2,  "x": 36,  "y": 252, "priceTier": 4, "status": "available" },
+            { "id": "M-8-03", "col": 3,  "x": 72,  "y": 252, "priceTier": 4, "status": "available" },
+            { "id": "M-8-04", "col": 4,  "x": 108, "y": 252, "priceTier": 4, "status": "available" },
+            { "id": "M-8-05", "col": 5,  "x": 144, "y": 252, "priceTier": 4, "status": "available" },
+            { "id": "M-8-06", "col": 6,  "x": 180, "y": 252, "priceTier": 4, "status": "available" },
+            { "id": "M-8-07", "col": 7,  "x": 216, "y": 252, "priceTier": 4, "status": "available" },
+            { "id": "M-8-08", "col": 8,  "x": 252, "y": 252, "priceTier": 4, "status": "available" },
+            { "id": "M-8-09", "col": 9,  "x": 288, "y": 252, "priceTier": 4, "status": "available" },
+            { "id": "M-8-10", "col": 10, "x": 324, "y": 252, "priceTier": 4, "status": "sold" },
+            { "id": "M-8-11", "col": 11, "x": 360, "y": 252, "priceTier": 4, "status": "available" },
+            { "id": "M-8-12", "col": 12, "x": 396, "y": 252, "priceTier": 4, "status": "available" },
+            { "id": "M-8-13", "col": 13, "x": 432, "y": 252, "priceTier": 4, "status": "available" },
+            { "id": "M-8-14", "col": 14, "x": 468, "y": 252, "priceTier": 4, "status": "available" },
+            { "id": "M-8-15", "col": 15, "x": 504, "y": 252, "priceTier": 4, "status": "available" },
+            { "id": "M-8-16", "col": 16, "x": 540, "y": 252, "priceTier": 4, "status": "sold" },
+            { "id": "M-8-17", "col": 17, "x": 576, "y": 252, "priceTier": 4, "status": "available" }
+          ]
         }
-    ]
+      ]
+    }
+  ]
 }
