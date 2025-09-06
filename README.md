@@ -11,11 +11,7 @@ Features include keyboard + mouse selection, pan/zoom (desktop + touch), heat-ma
 ## 🚀 Quick start
 
 ```bash
-# 1) Node 18+ and pnpm recommended
-corepack enable
-corepack prepare pnpm@latest --activate
-
-# 2) Install
+# 1) Install
 npm install
 
 # 3) Dev
